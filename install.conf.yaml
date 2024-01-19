@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+
+- link:
+    ~/.config/fish/config.fish: configs/shell/.config/fish/config.fish
+    ~/.config/tmux: configs/shell/.config/tmux
+    ~/.config/nvim: configs/editor/.config/nvim
+    ~/.config/alacritty/alacritty.toml: configs/gui/.config/alacritty/alacritty.toml
+
+- create:
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
