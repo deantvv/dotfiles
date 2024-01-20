@@ -2,4 +2,4 @@
 normal = { family = "Fira Code Nerd Font" }
 
 [window]
-decorations = "None"
+decorations = "none"
