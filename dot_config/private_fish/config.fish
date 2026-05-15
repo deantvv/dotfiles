@@ -7,7 +7,7 @@ if status --is-interactive
 			case 'linux'
 				:
 			case '*'
-				if ! set -q TMUX
+				if ! set -q TMUX; and ! set -q NO_TMUX
 					exec tmux set-option -g default-shell (which fish) ';' new-session -A -s main
 				end
 		end
