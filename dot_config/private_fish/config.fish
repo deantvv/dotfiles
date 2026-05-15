@@ -1,3 +1,6 @@
+abbr -a g git
+abbr -a mx 'mise exec'
+
 if status --is-interactive
 	switch $TERM
 		case 'linux'
@@ -8,3 +11,5 @@ if status --is-interactive
 			end
 	end
 end
+
+mise activate fish | source

@@ -1,0 +1,4 @@
+[tools]
+"npm:@anthropic-ai/claude-code" = "latest"
+shellcheck = "latest"
+uv = "latest"

@@ -1,0 +1,10 @@
+[user]
+	name = Dean Li
+	email = deantvv@gmail.com
+[alias]
+	c = commit
+	s = status
+[pull]
+	ff = only
+[push]
+	default = simple
