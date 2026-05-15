@@ -1,0 +1,16 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Fira Code",
+    "vim.highlightedyank.enable": true,
+    "editor.lineNumbers": "relative",
+    "telemetry.telemetryLevel": "off",
+    "remote.SSH.remotePlatform": {
+        "*": "linux"
+    },
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.startupEditor": "none",
+    "vim.useSystemClipboard": true
+}
