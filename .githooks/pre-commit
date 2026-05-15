@@ -1,0 +1,16 @@
+#!/bin/sh
+# gitleaks pre-commit hook
+#
+# Activated by:  git config core.hooksPath .githooks
+# Pinned via:    dot_config/mise/config.toml  (mise install)
+
+set -e
+
+if command -v gitleaks >/dev/null 2>&1; then
+    exec gitleaks protect --staged --redact --verbose
+elif command -v mise >/dev/null 2>&1; then
+    exec mise exec -- gitleaks protect --staged --redact --verbose
+else
+    echo "pre-commit: gitleaks not found; skipping secret scan." >&2
+    echo "  install: mise install   (gitleaks is pinned in dot_config/mise/config.toml)" >&2
+fi
