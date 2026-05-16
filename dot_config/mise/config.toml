@@ -3,3 +3,4 @@
 gitleaks = "latest"
 shellcheck = "latest"
 uv = "latest"
+chezmoi = "latest"
