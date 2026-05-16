@@ -1,7 +1,7 @@
 abbr -a g git
 abbr -a mx 'mise exec'
 
-{{ if eq .chezmoi.hostname "Mac" -}}
+{{ if has .chezmoi.hostname (list "Mac" "win") -}}
 if status --is-interactive
 	switch $TERM
 		case 'linux'
