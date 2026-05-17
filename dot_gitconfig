@@ -8,3 +8,10 @@
 	ff = only
 [push]
 	default = simple
+[help]
+	autocorrect = 1
+[github]
+	user = deantvv
+[diff]
+	algorithm = patience
+	compactionHeuristic = true
